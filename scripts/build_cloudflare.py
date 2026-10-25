@@ -15,3 +15,7 @@ shutil.copytree(game/'vendor',dist/'vendor',dirs_exist_ok=True)
 (dist/'_headers').write_text('/*\n  Cache-Control: public, max-age=0, must-revalidate\n  X-Content-Type-Options: nosniff\n')
 (dist/'release.json').write_text(json.dumps({'gameVersion':'v3.4-ornate-altar-dog','models':len(names)},indent=2))
 print(f'Cloudflare runtime build ready: {dist}')
+
+report=ROOT/"making-of"
+if report.exists():
+    shutil.copytree(report,dist/"making-of",dirs_exist_ok=True,ignore=shutil.ignore_patterns("dev"))

@@ -1,0 +1,50 @@
+const $=s=>document.querySelector(s), esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const assets=[
+['修补过的红鞋','shoe-v2','4334864','input-shoe-v2','把关心留在补丁与鞋带里。','第一段记忆：系紧鞋带，让旧物成为动作。'],
+['合上的食谱','book-closed','4334434','input-book-closed','一本留有使用痕迹的家庭食谱。','旧物的静置形态，与展开形态共同服务回忆。'],
+['展开的食谱','book-open','4334578','input-book-open','从物件走进一起做饭的记忆。','第二段记忆：翻阅、选择糖量与对话回响。'],
+['纸花','paper-flower','4334624','input-paper-flower','折痕是亲手做过的证据。','第三段记忆：折花与颜色选择。'],
+['空相框','frame-empty','4334628','input-frame-empty','为最后放入的照片留一个位置。','照片独立渲染，避免模型里已有照片造成叙事冲突。'],
+['记忆灯笼','lantern','4334632','input-lantern','记忆汇聚成一盏可以点亮的灯。','灯体来自模型，火焰与光效由游戏实时实现。'],
+['面包师 Rosa','npc-baker','4331611','v2-npc','让食谱记忆有一个可以回应的人。','Lux3D 原始角色 rosita；游戏中作为面包师。'],
+['乐师 Mateo','npc-musician','4331021','v2-npc','让等待与音乐进入街巷。','Lux3D 原始角色 hector；游戏中作为乐师。'],
+['守灯人 Ama','npc-lamplighter','原始库留档','v2-npc','让点灯成为有意义的选择。','游戏中第三位 NPC；不将未确认的任务编号强行对应。']
+];let selected=0,viewer;
+function selectAsset(i){selected=i;const a=assets[i];$('#assetName').textContent=a[0];$('#assetMeaning').textContent=a[4];$('#assetTask').textContent='Lux3D · '+a[2];$('#assetUse').textContent=a[5];$('#assetFallback').src=`assets/${a[3]}.webp`;$('#assetFallback').alt=a[0]+'参考与验收图';$('#assetFallback').hidden=false;$('#assetStatus').textContent=i<6?'生成输入参考 · 可载入实际 GLB':'NPC 实机截图 · 可载入实际 GLB';document.querySelectorAll('#assetTabs button').forEach((b,n)=>{b.classList.toggle('active',i===n);b.setAttribute('aria-pressed',i===n)});if(viewer)loadModel();}
+$('#assetTabs').innerHTML=assets.map((a,i)=>`<button data-asset="${i}">${esc(a[0])}</button>`).join('');$('#assetTabs').onclick=e=>{if(e.target.dataset.asset)selectAsset(+e.target.dataset.asset)};
+async function loadModel(){const a=assets[selected];$('#assetStatus').textContent='正在读取真实 GLB…';try{await viewer.load(`/assets/models/${a[1]}-game.glb`);$('#assetFallback').hidden=true;$('#assetStatus').textContent='实际 GLB · 拖动旋转查看';}catch(e){$('#assetStatus').textContent='模型暂未载入，可继续查看参考图';console.error(e)}}
+$('#load3d').onclick=async()=>{try{if(!viewer){const {createViewer}=await import('./viewer.js');viewer=createViewer($('#assetStage'));$('#rotateToggle').hidden=false;}await loadModel();}catch(e){$('#assetStatus').textContent='当前设备暂不支持三维预览';}};
+$('#rotateToggle').onclick=e=>{const on=e.target.getAttribute('aria-pressed')!=='true';e.target.setAttribute('aria-pressed',on);e.target.textContent=on?'暂停旋转':'自动旋转';viewer?.setRotate(on)};
+$('#luxTaskTable').innerHTML=assets.slice(0,6).map(a=>`<div class="task-row"><span>${a[0]}</span><span>${a[2]}</span><span>已进入游戏</span></div>`).join('');selectAsset(0);
+const rounds=[
+['asset','立意与路线：从最后一盏灯，到为你留灯','把“收集道具”改为“重新做一次被关心的动作”。先确定三件旧物、三段回忆、花桥与最后的照片。','Codex：剧情拆解、路线与资产规划。概念图只作为美术方向。','concept-world','概念 / 前期规划'],
+['asset','Lux3D：把旧物风格板变成可用模型','为每件旧物准备单独参考：红鞋、合上与展开的食谱、纸花、空相框、灯笼。生成后逐一检查前后结构、材质和比例。','Lux3D v3.0-standard · 目标面数 30,000；任务编号保存在图档中。','prop-board','生成输入 / 旧物风格板'],
+['asset','红鞋重做：从高帮鞋到有补丁的低帮鞋','用户明确指定新版左侧红鞋。保留磨损、浅色鞋带与两块缝补细节，重新准备单件输入并生成新 GLB；旧版不进入最终资产包。','Lux3D：4334159 → 4334864；新生成，不是简单替换贴图。','input-shoe-v2','输入参考 / 第二版红鞋'],
+['asset','人物与 NPC：先统一角色，再补动作','人物参考先检查面部与整体风格；Lux3D 角色库保留 13 项记录，游戏选入三位有剧情任务的 NPC。','Lux3D：关键 NPC 原始模型；角色库不等于全部进入场景。','elena-face','角色检查 / 非实机镜头'],
+['play','动画路线调整：改用 Tripo 网页生成','最初检查程序化动作，随后按照用户要求转向 Tripo 网页动画。人物需要行走，学徒需要拾取；导入后处理比例、播放与场景位置。','Tripo：动作；Codex：AnimationMixer 与游戏状态整合。','animation-preview','早期动作检查 / 非最终效果'],
+['play','第一版可玩：让三件旧物形成完整路线','搭建街区、旧物互动、记忆灯、花桥与结局，先验证从开场到结束可以完整走通。','Three.js：场景、碰撞、交互和状态；Codex：开发与检查。','v1-title','v1 / 游戏实机'],
+['scene','修正空间：使用生成的桥，清理漂浮物','根据试玩反馈修正桥的使用和位置，处理悬空桥、角色持框与声音入口，让空间关系支持叙事。','生成场景资产进入 Three.js；位置、尺度与可走区域单独调校。','v1-bridge','早期桥段 / 游戏实机'],
+['play','第二版：NPC、露娜与手心里的记忆','加入面包师、乐师、守灯人和露娜。把系鞋带、翻食谱、折花与选择反馈连接到剧情，提供鼠标和触控操作。','MediaPipe：自愿开启手势；鼠标与触控保留完整路线。','tie-shoe','v2 / 旧物互动实机'],
+['scene','第三版：花开在脚下，穿过两界','用背景画片建立远景层次；行走距离驱动交替脚步花瓣、金色光影与结界，桥段切换音乐。','实时着色、粒子、位置触发与音频混合；远景不是可进入城市。','petal-steps','v3 / 花桥效果实机'],
+['scene','视觉减法：移除方块建筑，明确照片身份','按反馈删去两侧突兀的立方体建筑。用伊莲娜生前人像作为唯一放入目标，避免骷髅照片与故事冲突。','二维人像贴图、分层背景与现有三维场景共同完成。','removed-blocks','v3 / 调整后的实机'],
+['scene','祭坛三轮：保留丰盛，也让放照片真正发生','巨大且已有奶奶照片的祭坛造成叙事矛盾；简化版功能成立但视觉不足。最终恢复原华丽资产，移除原肖像组件，缩放桌体并让照片从露娜手中进入空框。','原模型分件编辑 + 单一照片状态；动作结束后才进入后续。','restored-altar','v3.4 / 华丽祭坛实机'],
+['delivery','陪伴与交付：小狗、线上试玩、二维码与公开源码','导入已有小狗行走动画，加入引路、等待与跟随；完成本地与线上交付、现场扫码入口和 GitHub 公开。','Cloudflare：试玩；GitHub：源码与资产 Release；七项自动检查留档。','dog-bridge','v3.4 / 小狗与花桥实机']
+];
+$('#timeline').innerHTML=rounds.map((r,i)=>`<article class="round" data-category="${r[0]}"><span class="round-index">${String(i+1).padStart(2,'0')}</span><details ${i===1?'open':''}><summary><div><small>迭代 ${String(i+1).padStart(2,'0')} · ${r[5]}</small><h3>${r[1]}</h3></div></summary><div class="round-body"><div><p>${r[2]}</p><p class="quiet">${r[3]}</p></div><figure></figure></div></details></article>`).join('');
+// Populate images separately so evidence captions remain explicit.
+[...$('#timeline').children].forEach((el,i)=>{el.querySelector('figure').innerHTML=`<a class="zoom" href="assets/${rounds[i][4]}.webp"><img loading="lazy" src="assets/${rounds[i][4]}.webp" alt="${esc(rounds[i][5])}"></a><figcaption>${rounds[i][5]}</figcaption>`});
+function filterButtons(id,fn){$(id).onclick=e=>{const b=e.target.closest('button');if(!b)return;$(id).querySelectorAll('button').forEach(x=>x.classList.toggle('active',x===b));fn(b)}}
+filterButtons('#timelineFilters',b=>document.querySelectorAll('.round').forEach(r=>r.hidden=b.dataset.filter!=='all'&&r.dataset.category!==b.dataset.filter));
+const comparisons=[
+['红鞋重做','input-shoe','input-shoe-v2','旧输入：高帮','新输入：低帮补丁','生成输入对比','让补丁成为记忆的细节','旧版高帮造型不符合用户指定的新参考。','重新准备低帮鞋输入，用 Lux3D 重新生成；保留旧版留档。','此处比较两次生成输入；可在上方载入最终 GLB 验证模型。'],
+['祭坛叙事','altar-problem','restored-altar','反馈：过大且已有照片','最终：华丽祭坛重构','实际游戏截图','一个空位，才有放入的意义','原祭坛已有中心奶奶照片，露娜放照片没有可见结果。','恢复原资产的花、烛与雕饰，移除旧肖像，缩小祭坛并连接照片状态。','不同机位截图，仅比较结构与叙事逻辑；不作为同机位画质对照。'],
+['祭坛美术','simple-altar','restored-altar','中间版：简化祭坛','最终版：保留原华丽资产','实际游戏截图','功能成立以后，把情绪还回来','简化祭坛解决了放照片，但视觉过于朴素。','回到用户更喜欢的原资产，分件清理后整合新照片。','不同机位、不同构图；截图按实际版本呈现。'],
+['空间层次','v1-bridge','city-barrier','早期：桥段搭建','后期：两界与结界','实际游戏截图','从一条路线，到一次穿越','早期空间主要承担走通路线的功能。','增加远景层次、结界、脚步花瓣与声音切换；移除突兀方块建筑。','背景采用 2.5D 图层；远方城市暂不可进入。']
+];
+function compare(i){const c=comparisons[i];$('#compareBefore').src=`assets/${c[1]}.webp`;$('#compareAfter').src=`assets/${c[2]}.webp`;$('#compareBefore').alt=c[3];$('#compareAfter').alt=c[4];['beforeBadge','afterBadge','compareKind','compareTitle','compareProblem','compareDecision','compareCaveat'].forEach((id,n)=>$('#'+id).textContent=c[n+3]);$('#compareTabs').querySelectorAll('button').forEach((b,n)=>b.classList.toggle('active',n===i));}
+$('#compareTabs').innerHTML=comparisons.map((c,i)=>`<button data-compare="${i}">${c[0]}</button>`).join('');$('#compareTabs').onclick=e=>{if(e.target.dataset.compare)compare(+e.target.dataset.compare)};$('#compareRange').oninput=e=>{const v=e.target.value;$('#compareBeforeClip').style.clipPath=`inset(0 ${100-v}% 0 0)`;$('#compareLine').style.left=v+'%'};compare(0);
+const versions={v1:['v1-title','v1：搭起开场、三件旧物、花桥与结局的完整路线。'],v2:['v2-npc','v2：NPC 与露娜加入，旧物从收集目标变成需要亲手完成的记忆。'],v3:['restored-altar','v3.4：花桥光影、两界背景、照片状态与华丽祭坛修订，小狗加入陪伴。']};filterButtons('#versionTabs',b=>{const v=versions[b.dataset.version];$('#versionImage').src=`assets/${v[0]}.webp`;$('#versionCaption').textContent=v[1]});
+$('#sugarChoices').onclick=e=>{if(e.target.dataset.sugar)$('#sugarEcho').textContent=({'1':'“今天少放一点。你终于也学会照顾自己了。”','2':'“还是这个味道。原来你一直记得。”','3':'“你小时候，总偷偷多舀一勺。”'})[e.target.dataset.sugar]};
+const kinds={concept:'概念图',input:'生成输入',gameplay:'游戏实机','model-review':'模型检查','animation-review':'动作检查',process:'制作过程',reference:'参考资料'};
+const ledger=await fetch('evidence/media-ledger.json').then(r=>r.json());$('#gallery').innerHTML=ledger.map(m=>{const group=['concept','input','gameplay'].includes(m.kind)?m.kind:'process';return `<figure data-group="${group}"><a class="zoom" href="${m.file}"><img loading="lazy" src="${m.file}" alt="${esc(m.caption)}"></a><figcaption><span class="tag">${kinds[m.kind]||'过程留档'}</span>${esc(m.caption)}</figcaption></figure>`}).join('');filterButtons('#galleryFilters',b=>$('#gallery').querySelectorAll('figure').forEach(f=>f.hidden=b.dataset.gallery!=='all'&&f.dataset.group!==b.dataset.gallery));
+const dialog=$('#lightbox');document.addEventListener('click',e=>{const a=e.target.closest('a.zoom');if(!a)return;e.preventDefault();dialog.querySelector('img').src=a.href;dialog.querySelector('img').alt=a.querySelector('img')?.alt||'制作图档';dialog.querySelector('p').textContent=a.closest('figure')?.querySelector('figcaption')?.textContent||a.querySelector('img')?.alt||'';dialog.showModal()});$('#closeLightbox').onclick=()=>dialog.close();dialog.onclick=e=>{if(e.target===dialog)dialog.close()};$('#copyPitch').onclick=async()=>{try{await navigator.clipboard.writeText('《为你留灯》：用三件旧物，重新做一次被爱过的动作。关键旧物与 NPC 由群核 Lux3D 生成，Codex 开发，Tripo 整合动作。试玩：https://weini-liudeng.wenshu2025.workers.dev/ 制作纪实：https://weini-liudeng.wenshu2025.workers.dev/making-of/ #Aholo黑客松');$('#copyStatus').textContent='项目介绍已复制，可编辑后自行发布。'}catch{$('#copyStatus').textContent='可直接复制网页地址与项目介绍。'}};

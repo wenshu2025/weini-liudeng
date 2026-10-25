@@ -17,7 +17,7 @@ python3 -m http.server 8769 --bind 127.0.0.1 --directory game
 
 浏览器打开 http://127.0.0.1:8769/ 。也可在素材恢复后双击 `game/启动游戏.command` 或 `game/启动游戏.bat`。
 
-运行素材约 167 MB，独立于源码版本管理。下载脚本从已发布站点恢复素材，并按 `assets-manifest.json` 校验 SHA-256。完整素材备份见本仓库 **Releases → v3.4 → weini-liudeng-assets-v3.4.zip**。私有附件需要登录 GitHub 下载，可离线恢复：
+运行素材约 167 MB，独立于源码版本管理。下载脚本从已发布站点恢复素材，并按 `assets-manifest.json` 校验 SHA-256。完整素材备份见本仓库 **Releases → v3.4 → weini-liudeng-assets-v3.4.zip**。仓库与附件均已公开，可离线恢复：
 
 ```bash
 python3 scripts/fetch_assets.py --archive /path/to/weini-liudeng-assets-v3.4.zip
@@ -62,3 +62,11 @@ npm run deploy
 - `deploy/cloudflare/`：部署配置与发布记录。
 
 模型与音乐为项目提供的素材，归各自权利方所有；第三方运行库随素材附件保留其原始说明与许可证。本仓库未授予对所有素材的开源许可。
+
+## 开发纪实与评审材料
+
+[打开制作纪实网页](https://weini-liudeng.wenshu2025.workers.dev/making-of/)：按五项评审维度整理 12 轮迭代、Lux3D 旧物与 NPC 任务记录、34 张参考与过程图、关键版本对比、实际 GLB 查看器和 90 秒叙事短片。概念图、实机截图与预渲染镜头分别标注。
+
+网页源文件位于 `making-of/`。图片与视频使用公开站点留存的媒体文件，原图索引见 `making-of/evidence/media-ledger.json`；本地运行时需恢复这些媒体，或直接访问线上网页。
+
+制作纪实本地预览：先运行 `python3 scripts/fetch_making_of.py`，再 `npm run build`，用 `python3 -m http.server 8775 --directory deploy/cloudflare/dist` 访问 `/making-of/`。

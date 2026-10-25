@@ -1,0 +1,206 @@
+[
+  {
+    "file": "assets/concept-world.webp",
+    "source": "preproduction/为你留灯-v1/references/01-world.png",
+    "kind": "concept",
+    "caption": "前期世界观概念图，非实时游戏画面"
+  },
+  {
+    "file": "assets/prop-board.webp",
+    "source": "assets/lux3d-v1/reference-board.png",
+    "kind": "input",
+    "caption": "用户提供的旧物风格板"
+  },
+  {
+    "file": "assets/input-shoe.webp",
+    "source": "assets/lux3d-v1/inputs/shoe.png",
+    "kind": "input",
+    "caption": "Lux3D 图生3D输入参考；旧版红鞋仅作迭代对比"
+  },
+  {
+    "file": "assets/input-shoe-v2.webp",
+    "source": "assets/lux3d-v1/inputs/shoe-v2.png",
+    "kind": "input",
+    "caption": "为Lux3D准备的单件参考图"
+  },
+  {
+    "file": "assets/input-book-closed.webp",
+    "source": "assets/lux3d-v1/inputs/book-closed.png",
+    "kind": "input",
+    "caption": "为Lux3D准备的单件参考图"
+  },
+  {
+    "file": "assets/input-book-open.webp",
+    "source": "assets/lux3d-v1/inputs/book-open.png",
+    "kind": "input",
+    "caption": "为Lux3D准备的单件参考图"
+  },
+  {
+    "file": "assets/input-paper-flower.webp",
+    "source": "assets/lux3d-v1/inputs/paper-flower.png",
+    "kind": "input",
+    "caption": "为Lux3D准备的单件参考图"
+  },
+  {
+    "file": "assets/input-frame-empty.webp",
+    "source": "assets/lux3d-v1/inputs/frame-empty.png",
+    "kind": "input",
+    "caption": "为Lux3D准备的单件参考图"
+  },
+  {
+    "file": "assets/input-lantern.webp",
+    "source": "assets/lux3d-v1/inputs/lantern.png",
+    "kind": "input",
+    "caption": "为Lux3D准备的单件参考图"
+  },
+  {
+    "file": "assets/v1-title.webp",
+    "source": "game/screenshots/01-title.png",
+    "kind": "gameplay",
+    "caption": "v1可玩原型：开场"
+  },
+  {
+    "file": "assets/v1-bridge.webp",
+    "source": "game/screenshots/03-bridge.png",
+    "kind": "gameplay",
+    "caption": "v1桥面与陪伴路线"
+  },
+  {
+    "file": "assets/v1-ending.webp",
+    "source": "game/screenshots/04-ending.png",
+    "kind": "gameplay",
+    "caption": "v1结尾"
+  },
+  {
+    "file": "assets/v2-npc.webp",
+    "source": "game/screenshots/v2/01-npc-plaza.png",
+    "kind": "gameplay",
+    "caption": "v2引入广场NPC"
+  },
+  {
+    "file": "assets/tie-shoe.webp",
+    "source": "game/screenshots/v2/02-tie-shoe.png",
+    "kind": "gameplay",
+    "caption": "亲手系鞋带互动"
+  },
+  {
+    "file": "assets/fold-flower.webp",
+    "source": "game/screenshots/v2/03-fold-flower.png",
+    "kind": "gameplay",
+    "caption": "纸花互动"
+  },
+  {
+    "file": "assets/v2-photo.webp",
+    "source": "game/screenshots/v2/04-luna-photo.png",
+    "kind": "gameplay",
+    "caption": "早期露娜放照片镜头"
+  },
+  {
+    "file": "assets/city-barrier.webp",
+    "source": "game/screenshots/v3/01-city-and-barrier.png",
+    "kind": "gameplay",
+    "caption": "城市远景与桥头结界"
+  },
+  {
+    "file": "assets/petal-steps.webp",
+    "source": "game/screenshots/v3/02-bridge-petals.png",
+    "kind": "gameplay",
+    "caption": "按脚步触发花瓣与暖光"
+  },
+  {
+    "file": "assets/removed-blocks.webp",
+    "source": "game/screenshots/v3/05-box-buildings-removed.png",
+    "kind": "gameplay",
+    "caption": "撤掉两侧方块建筑后的本地画面"
+  },
+  {
+    "file": "assets/simple-empty.webp",
+    "source": "game/screenshots/v3/06-altar-empty.png",
+    "kind": "gameplay",
+    "caption": "过渡方案：小供桌与空相框"
+  },
+  {
+    "file": "assets/simple-altar.webp",
+    "source": "game/screenshots/v3/07-altar-photo-placed.png",
+    "kind": "gameplay",
+    "caption": "过渡方案：功能正确但装饰不足"
+  },
+  {
+    "file": "assets/restored-altar.webp",
+    "source": "game/screenshots/v3/08-restored-altar-photo.png",
+    "kind": "gameplay",
+    "caption": "最终恢复原祭坛装饰，低位单相框"
+  },
+  {
+    "file": "assets/dog-bridge.webp",
+    "source": "game/screenshots/v3/10-dog-bridge.png",
+    "kind": "gameplay",
+    "caption": "小狗四足行走与过桥同行"
+  },
+  {
+    "file": "assets/altar-reference.webp",
+    "source": "亡灵节家庭纪念祭坛/亡灵节家庭纪念祭坛-高清原视角.png",
+    "kind": "concept",
+    "caption": "原祭坛设计参考：多照片和完整装饰"
+  },
+  {
+    "file": "assets/two-worlds.webp",
+    "source": "preproduction/为你留灯-v3/双世界场景概念-v1.png",
+    "kind": "concept",
+    "caption": "双世界氛围概念，非完整实机城市"
+  },
+  {
+    "file": "assets/elena-reference.webp",
+    "source": "Elena_三视图版/elena-front.png",
+    "kind": "input",
+    "caption": "伊莲娜前视参考"
+  },
+  {
+    "file": "assets/elena-face.webp",
+    "source": "Elena_局部修模版/repaired-face.png",
+    "kind": "model-review",
+    "caption": "人物局部修模检查"
+  },
+  {
+    "file": "assets/apprentice-review.webp",
+    "source": "小男孩骷髅学徒_三视图多图版/模型预览_正面.png",
+    "kind": "model-review",
+    "caption": "学徒模型检查图"
+  },
+  {
+    "file": "assets/animation-preview.webp",
+    "source": "人物动画-v2/apprentice-preview.png",
+    "kind": "animation-review",
+    "caption": "早期动作制作预览，后来切换Tripo动作资产"
+  },
+  {
+    "file": "assets/tripo-bridge.webp",
+    "source": "output/花桥多视角/直桥_Tripo生成完成.png",
+    "kind": "process",
+    "caption": "Tripo直桥模型生成完成记录"
+  },
+  {
+    "file": "assets/tripo-dog.webp",
+    "source": "output/tripo-dante.png",
+    "kind": "process",
+    "caption": "Tripo小狗动作资产相关截图"
+  },
+  {
+    "file": "assets/portrait.webp",
+    "source": "game/assets/images/elena-living-portrait-v2.png",
+    "kind": "asset",
+    "caption": "用户指定插图中的奶奶人像，单独整理为照片贴图"
+  },
+  {
+    "file": "assets/altar-problem.webp",
+    "source": "codex-clipboard-e057aae7-5956-4da3-853e-08768ca62713.png",
+    "kind": "feedback",
+    "caption": "用户反馈截图：旧祭坛已有奶奶照片，放入动作不成立"
+  },
+  {
+    "file": "assets/judging-rules.webp",
+    "source": "codex-clipboard-5bd3f30d-7c32-4861-82ae-686cfe426e6a.png",
+    "kind": "rules",
+    "caption": "评审权重依据：用户提供的比赛页面截图"
+  }
+]

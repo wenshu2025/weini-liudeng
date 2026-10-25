@@ -1,0 +1,226 @@
+{
+  "files": [
+    {
+      "path": "making-of/assets/altar-problem.webp",
+      "url": "https://weini-liudeng.wenshu2025.workers.dev/making-of/assets/altar-problem.webp",
+      "bytes": 169006,
+      "sha256": "284a7a04dfc61d9eb774e4ddcc976744513bf8f8892a413ff25f2d2716595e7f"
+    },
+    {
+      "path": "making-of/assets/altar-reference.webp",
+      "url": "https://weini-liudeng.wenshu2025.workers.dev/making-of/assets/altar-reference.webp",
+      "bytes": 234840,
+      "sha256": "0254a7b06fe54a7a1f23cf78757ab8c7da71ae26ea1499b82d79f781bb1bc327"
+    },
+    {
+      "path": "making-of/assets/animation-preview.webp",
+      "url": "https://weini-liudeng.wenshu2025.workers.dev/making-of/assets/animation-preview.webp",
+      "bytes": 24868,
+      "sha256": "5102a049fc9a1aa655c5aa135204469d043d98487ed0e7615946bd610e5b1fde"
+    },
+    {
+      "path": "making-of/assets/apprentice-review.webp",
+      "url": "https://weini-liudeng.wenshu2025.workers.dev/making-of/assets/apprentice-review.webp",
+      "bytes": 51526,
+      "sha256": "d05787704dcadc3e088bc60b3716b8b5a7ecabe7f3e4f3ae66ea3afa6e9738f2"
+    },
+    {
+      "path": "making-of/assets/city-barrier.webp",
+      "url": "https://weini-liudeng.wenshu2025.workers.dev/making-of/assets/city-barrier.webp",
+      "bytes": 83286,
+      "sha256": "78beaf1b197b7e44b6784ba8c1c850427f1a156ce2b846ef878d2b4fa1c783da"
+    },
+    {
+      "path": "making-of/assets/concept-world.webp",
+      "url": "https://weini-liudeng.wenshu2025.workers.dev/making-of/assets/concept-world.webp",
+      "bytes": 285350,
+      "sha256": "d92db476fe50b0c8a83d9ea83d9f1c56c758526efac15406dba97a120b3aa426"
+    },
+    {
+      "path": "making-of/assets/dog-bridge.webp",
+      "url": "https://weini-liudeng.wenshu2025.workers.dev/making-of/assets/dog-bridge.webp",
+      "bytes": 120528,
+      "sha256": "abd2d3a9d9f4a761a275c1ca1b51f5e5ae2f348815250a3bf564cd1cdda5710b"
+    },
+    {
+      "path": "making-of/assets/elena-face.webp",
+      "url": "https://weini-liudeng.wenshu2025.workers.dev/making-of/assets/elena-face.webp",
+      "bytes": 61728,
+      "sha256": "4eea7c380d5b5cbf144c58baa58e6a575b57f0ad6cde5219bf79f896532926d3"
+    },
+    {
+      "path": "making-of/assets/elena-reference.webp",
+      "url": "https://weini-liudeng.wenshu2025.workers.dev/making-of/assets/elena-reference.webp",
+      "bytes": 74402,
+      "sha256": "d163b53928b44c915a865b39e564931388ad0bd7faf1eb42fa9e28605e4b4cf8"
+    },
+    {
+      "path": "making-of/assets/fold-flower.webp",
+      "url": "https://weini-liudeng.wenshu2025.workers.dev/making-of/assets/fold-flower.webp",
+      "bytes": 22576,
+      "sha256": "7ad841ef2415fe22daf13acca4111f9e25d3928524d822a7731b7d02324fda78"
+    },
+    {
+      "path": "making-of/assets/input-book-closed.webp",
+      "url": "https://weini-liudeng.wenshu2025.workers.dev/making-of/assets/input-book-closed.webp",
+      "bytes": 202262,
+      "sha256": "9b2b64ef806cfb63037652b46d8ec1c6637397d3433f0cd614d4fa9d48f3eff3"
+    },
+    {
+      "path": "making-of/assets/input-book-open.webp",
+      "url": "https://weini-liudeng.wenshu2025.workers.dev/making-of/assets/input-book-open.webp",
+      "bytes": 181346,
+      "sha256": "c212d9271f18d5e58be2ab86b80bfa118c3372a055e8e4f7ab933dd7ac6506d4"
+    },
+    {
+      "path": "making-of/assets/input-frame-empty.webp",
+      "url": "https://weini-liudeng.wenshu2025.workers.dev/making-of/assets/input-frame-empty.webp",
+      "bytes": 148044,
+      "sha256": "c42891e1c3879cf54edd942b9ed627d9cf5f4a1fc7b569642b8a2519117af830"
+    },
+    {
+      "path": "making-of/assets/input-lantern.webp",
+      "url": "https://weini-liudeng.wenshu2025.workers.dev/making-of/assets/input-lantern.webp",
+      "bytes": 132048,
+      "sha256": "bdaf3e3b14821a29069b9398483b978056776cc9e64ec3c032caf4067a4c4ba3"
+    },
+    {
+      "path": "making-of/assets/input-paper-flower.webp",
+      "url": "https://weini-liudeng.wenshu2025.workers.dev/making-of/assets/input-paper-flower.webp",
+      "bytes": 83242,
+      "sha256": "5fa3afece8b850473a0743b1a2f045f9c19c86d76948bd3d503d6fc63cf56fc9"
+    },
+    {
+      "path": "making-of/assets/input-shoe-v2.webp",
+      "url": "https://weini-liudeng.wenshu2025.workers.dev/making-of/assets/input-shoe-v2.webp",
+      "bytes": 111840,
+      "sha256": "12b21de9c69b9b293fd444f80aae303bbcc8a68542552760e062cabe05a6d6f8"
+    },
+    {
+      "path": "making-of/assets/input-shoe.webp",
+      "url": "https://weini-liudeng.wenshu2025.workers.dev/making-of/assets/input-shoe.webp",
+      "bytes": 205602,
+      "sha256": "5256b801c37244cf69b460428c7ee7c3dd4dd2e8d0f9324b6214e99ba082c451"
+    },
+    {
+      "path": "making-of/assets/judging-rules.webp",
+      "url": "https://weini-liudeng.wenshu2025.workers.dev/making-of/assets/judging-rules.webp",
+      "bytes": 89434,
+      "sha256": "a7a43ba6603e84206caaa2c8e5d17feb67ee911ce61e3e9abb1643053e3eb5ea"
+    },
+    {
+      "path": "making-of/assets/petal-steps.webp",
+      "url": "https://weini-liudeng.wenshu2025.workers.dev/making-of/assets/petal-steps.webp",
+      "bytes": 104706,
+      "sha256": "1f7919d9c186acfb2962111c1d3acc312147bff974023b5700437749e48dc5b5"
+    },
+    {
+      "path": "making-of/assets/play-qr.png",
+      "url": "https://weini-liudeng.wenshu2025.workers.dev/making-of/assets/play-qr.png",
+      "bytes": 1822,
+      "sha256": "19d6f3e2585afa7f867d365e0937f8b352ab4bf1b88212ac3ba7bae15f1256f9"
+    },
+    {
+      "path": "making-of/assets/portrait.webp",
+      "url": "https://weini-liudeng.wenshu2025.workers.dev/making-of/assets/portrait.webp",
+      "bytes": 153152,
+      "sha256": "6aae448ab2220aa4bfaeacc1f06b77ccc162b4551adacf0e4d490cd5328bbcc5"
+    },
+    {
+      "path": "making-of/assets/prop-board.webp",
+      "url": "https://weini-liudeng.wenshu2025.workers.dev/making-of/assets/prop-board.webp",
+      "bytes": 246716,
+      "sha256": "786915db8a6ac5746edcf8bcdbac4fac65c6481b14b6aa9ab8d8c455f2906087"
+    },
+    {
+      "path": "making-of/assets/removed-blocks.webp",
+      "url": "https://weini-liudeng.wenshu2025.workers.dev/making-of/assets/removed-blocks.webp",
+      "bytes": 59756,
+      "sha256": "bc31a8ea0c5e29e3edfe8c5063f86561a81f4fdd46f02bae75d4642597a72ace"
+    },
+    {
+      "path": "making-of/assets/restored-altar.webp",
+      "url": "https://weini-liudeng.wenshu2025.workers.dev/making-of/assets/restored-altar.webp",
+      "bytes": 81688,
+      "sha256": "3875a6c2750c382f6b816d0db2378bf643c1fbf8f703f6f08325d2741655d278"
+    },
+    {
+      "path": "making-of/assets/route.svg",
+      "url": "https://weini-liudeng.wenshu2025.workers.dev/making-of/assets/route.svg",
+      "bytes": 2930,
+      "sha256": "bdbb58d4468c594c3662b421f928d79bb3a6244c5739b08cdbb18d1d34261139"
+    },
+    {
+      "path": "making-of/assets/simple-altar.webp",
+      "url": "https://weini-liudeng.wenshu2025.workers.dev/making-of/assets/simple-altar.webp",
+      "bytes": 73050,
+      "sha256": "6049b36f12646cafa183a1c5d46aad6ff2065549d3d0ffd55de39a6584d762eb"
+    },
+    {
+      "path": "making-of/assets/simple-empty.webp",
+      "url": "https://weini-liudeng.wenshu2025.workers.dev/making-of/assets/simple-empty.webp",
+      "bytes": 73166,
+      "sha256": "c3dff0e6e56478ed797a68382f679761301dcb2877ebe06e29c3267f94183054"
+    },
+    {
+      "path": "making-of/assets/story-film-90s.mp4",
+      "url": "https://weini-liudeng.wenshu2025.workers.dev/making-of/assets/story-film-90s.mp4",
+      "bytes": 12337145,
+      "sha256": "37dac20a4e2707f6f30d1cf433382fddf7f98ee32d9f6bc9e5e29ac060788083"
+    },
+    {
+      "path": "making-of/assets/tie-shoe.webp",
+      "url": "https://weini-liudeng.wenshu2025.workers.dev/making-of/assets/tie-shoe.webp",
+      "bytes": 26980,
+      "sha256": "65c9307b619b4951a9f014cb2c8bd7ea8dfe2310644610f957a9f66f00e1c9c6"
+    },
+    {
+      "path": "making-of/assets/tripo-bridge.webp",
+      "url": "https://weini-liudeng.wenshu2025.workers.dev/making-of/assets/tripo-bridge.webp",
+      "bytes": 47444,
+      "sha256": "a67ea8130a31affbfa4802e976ba33834ae4305be2a336632eda041df9d5df13"
+    },
+    {
+      "path": "making-of/assets/tripo-dog.webp",
+      "url": "https://weini-liudeng.wenshu2025.workers.dev/making-of/assets/tripo-dog.webp",
+      "bytes": 70132,
+      "sha256": "c00e51577492c4358899b9386dccc35f30b836e9e3cdb44d25e41e1560cadb4d"
+    },
+    {
+      "path": "making-of/assets/two-worlds.webp",
+      "url": "https://weini-liudeng.wenshu2025.workers.dev/making-of/assets/two-worlds.webp",
+      "bytes": 350076,
+      "sha256": "35735a11895043a666969540826a7540ce89901aeef8a4071959eb289eefe66a"
+    },
+    {
+      "path": "making-of/assets/v1-bridge.webp",
+      "url": "https://weini-liudeng.wenshu2025.workers.dev/making-of/assets/v1-bridge.webp",
+      "bytes": 139472,
+      "sha256": "9f2b6cc2c724b024cc15bfce74ffc743039b9cbb0eb9ac79db6f6ed9070ad3c7"
+    },
+    {
+      "path": "making-of/assets/v1-ending.webp",
+      "url": "https://weini-liudeng.wenshu2025.workers.dev/making-of/assets/v1-ending.webp",
+      "bytes": 42770,
+      "sha256": "567ce0240738708363289292657264c5d4cf99ad2298398cdc2cc8d159128aa0"
+    },
+    {
+      "path": "making-of/assets/v1-title.webp",
+      "url": "https://weini-liudeng.wenshu2025.workers.dev/making-of/assets/v1-title.webp",
+      "bytes": 68710,
+      "sha256": "460358fccd1c65a6fd70803733e48c4d055d7c9130b2a180ab5abcf724162171"
+    },
+    {
+      "path": "making-of/assets/v2-npc.webp",
+      "url": "https://weini-liudeng.wenshu2025.workers.dev/making-of/assets/v2-npc.webp",
+      "bytes": 72006,
+      "sha256": "df55971a687aa95a731fc15c6de3592655df7064cf69f64ec55f24e7fb60325a"
+    },
+    {
+      "path": "making-of/assets/v2-photo.webp",
+      "url": "https://weini-liudeng.wenshu2025.workers.dev/making-of/assets/v2-photo.webp",
+      "bytes": 78144,
+      "sha256": "0e46283c8b3e37705a5598eab23b9e1eea88c11f3af233ac4e14e7330c67c10f"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "provider": "Lux3D",
+  "version": "v3.0-standard",
+  "targetFaces": 30000,
+  "region": "cn",
+  "assets": [
+    {
+      "id": "PROP01",
+      "name": "红鞋 v1 旧版",
+      "task_id": "4334159",
+      "status": "downloaded",
+      "output": "models/shoe.glb"
+    },
+    {
+      "id": "PROP02a",
+      "name": "闭合食谱",
+      "task_id": "4334434",
+      "status": "downloaded",
+      "output": "models/book-closed.glb"
+    },
+    {
+      "id": "PROP02b",
+      "name": "展开食谱",
+      "task_id": "4334578",
+      "status": "downloaded",
+      "output": "models/book-open.glb"
+    },
+    {
+      "id": "PROP03",
+      "name": "纸万寿菊",
+      "task_id": "4334624",
+      "status": "downloaded",
+      "output": "models/paper-flower.glb"
+    },
+    {
+      "id": "PROP05",
+      "name": "空相框",
+      "task_id": "4334628",
+      "status": "downloaded",
+      "output": "models/frame-empty.glb"
+    },
+    {
+      "id": "PROP04",
+      "name": "未点亮灯笼",
+      "task_id": "4334632",
+      "status": "downloaded",
+      "output": "models/lantern.glb"
+    },
+    {
+      "id": "PROP01",
+      "name": "补丁低帮红鞋 v2",
+      "task_id": "4334864",
+      "status": "downloaded",
+      "output": "models/shoe-v2.glb"
+    },
+    {
+      "name": "伊莲娜 人物原模型",
+      "status": "downloaded",
+      "output": "models/elena.glb"
+    },
+    {
+      "name": "露娜 人物原模型",
+      "status": "downloaded",
+      "output": "models/luna-v2.glb"
+    }
+  ]
+}

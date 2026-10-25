@@ -1,0 +1,97 @@
+{
+  "count": 13,
+  "provenance": "作者提供的Lux3D角色资产索引",
+  "assets": [
+    {
+      "id": "miguel",
+      "nameZh": "红衣男孩（白吉他）",
+      "file": "miguel.glb",
+      "sourceTask": "cn:4331015",
+      "rigged": false
+    },
+    {
+      "id": "hector",
+      "nameZh": "草帽骷髅（木吉他）",
+      "file": "hector.glb",
+      "sourceTask": "cn:4331021",
+      "rigged": false
+    },
+    {
+      "id": "ernesto",
+      "nameZh": "白色礼服宽帽骷髅",
+      "file": "ernesto.glb",
+      "sourceTask": "cn:4331246",
+      "rigged": false
+    },
+    {
+      "id": "imelda",
+      "nameZh": "紫裙女骷髅",
+      "file": "imelda.glb",
+      "sourceTask": "cn:4331251",
+      "rigged": false
+    },
+    {
+      "id": "rosita",
+      "nameZh": "红花冠女骷髅",
+      "file": "rosita.glb",
+      "sourceTask": "cn:4331611",
+      "rigged": false
+    },
+    {
+      "id": "elena_skeleton",
+      "nameZh": "眼镜短发女骷髅",
+      "file": "elena_skeleton.glb",
+      "sourceTask": "cn:4331616",
+      "rigged": false
+    },
+    {
+      "id": "victoria",
+      "nameZh": "绿纹微笑女骷髅",
+      "file": "victoria.glb",
+      "sourceTask": "cn:4331717",
+      "rigged": false
+    },
+    {
+      "id": "papa_julio",
+      "nameZh": "卷胡须男骷髅",
+      "file": "papa_julio.glb",
+      "sourceTask": "cn:4331729",
+      "rigged": false
+    },
+    {
+      "id": "papa_felipe",
+      "nameZh": "圆顶帽条纹衫骷髅甲",
+      "file": "papa_felipe.glb",
+      "sourceTask": "cn:4331835",
+      "rigged": false
+    },
+    {
+      "id": "papa_oscar",
+      "nameZh": "圆顶帽条纹衫骷髅乙",
+      "file": "papa_oscar.glb",
+      "sourceTask": "cn:4331861",
+      "rigged": false
+    },
+    {
+      "id": "chicharron",
+      "nameZh": "草帽白胡须老骷髅",
+      "file": "chicharron.glb",
+      "sourceTask": "cn:4333408",
+      "rigged": false
+    },
+    {
+      "id": "tall_skeleton",
+      "nameZh": "左上长脸骷髅",
+      "file": "tall_skeleton.glb",
+      "sourceTask": "cn:4333412",
+      "rigged": false
+    },
+    {
+      "id": "dante",
+      "nameZh": "长舌狗",
+      "file": "dante.glb",
+      "sourceTask": "cn:4333618",
+      "rigged": false
+    }
+  ]
+}
