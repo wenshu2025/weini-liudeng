@@ -1,0 +1,158 @@
+{
+  "title": "为你留灯",
+  "version": "local-v2",
+  "units": "metres",
+  "axis": "Y-up,+Z-forward",
+  "regions": [
+    {
+      "id": "plaza",
+      "x": [
+        -5.8,
+        5.8
+      ],
+      "z": [
+        0.3,
+        13.3
+      ]
+    },
+    {
+      "id": "bridge",
+      "x": [
+        -1.4,
+        1.4
+      ],
+      "z": [
+        13.3,
+        30
+      ],
+      "requires": "3 memories + PHOTO_DONE"
+    },
+    {
+      "id": "gate",
+      "x": [
+        -5.8,
+        5.8
+      ],
+      "z": [
+        30,
+        39.3
+      ]
+    }
+  ],
+  "spawn": [
+    0,
+    0,
+    1
+  ],
+  "playerSpeed": 2.2,
+  "interactionRange": 1.85,
+  "elenaStart": [
+    1.6,
+    0,
+    12
+  ],
+  "lamps": [
+    [
+      -2.4,
+      0,
+      17
+    ],
+    [
+      2.4,
+      0,
+      22
+    ],
+    [
+      -2.4,
+      0,
+      27
+    ]
+  ],
+  "gateTrigger": {
+    "zMin": 31,
+    "absXMax": 1.5
+  },
+  "altar": [
+    0,
+    0,
+    38
+  ],
+  "states": [
+    "OPENING",
+    "EXPLORE",
+    "MEMORY",
+    "PHOTO",
+    "TO_GATE",
+    "ENDING",
+    "COMPLETE"
+  ],
+  "traversal": "flat collision surfaces independent of decorative generated meshes",
+  "ordering": "all six permutations supported",
+  "npcs": [
+    {
+      "id": "baker",
+      "name": "罗莎",
+      "position": [
+        4.7,
+        0,
+        5.1
+      ]
+    },
+    {
+      "id": "musician",
+      "name": "马特奥",
+      "position": [
+        -4.65,
+        -0.06,
+        6.8
+      ]
+    },
+    {
+      "id": "keeper",
+      "name": "阿玛",
+      "position": [
+        -2.2,
+        0,
+        12
+      ]
+    }
+  ],
+  "activities": {
+    "shoe": [
+      "lift",
+      "drag_left",
+      "drag_right",
+      "tie",
+      "memory",
+      "light"
+    ],
+    "recipe": [
+      "open",
+      "choose_sugar",
+      "stir",
+      "memory",
+      "light"
+    ],
+    "flower": [
+      "choose_paper",
+      "lift",
+      "fold_1",
+      "fold_2",
+      "fold_3",
+      "open",
+      "memory",
+      "light"
+    ]
+  },
+  "luna": {
+    "model": "luna-new-game.glb",
+    "clip": "model-action",
+    "auxiliaryMotion": "runtime idle, two-arm IK and photo-placement sequencing",
+    "target": [
+      0.65,
+      0.22,
+      35.8
+    ]
+  },
+  "gestureMode": "Opt-in local camera; mouse/touch equivalents for every activity"
+}

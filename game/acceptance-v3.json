@@ -1,0 +1,93 @@
+{
+  "version": "local-v3.4-ornate-altar-dog",
+  "browserJourney": {
+    "completed": [
+      "opening",
+      "shoe",
+      "recipe-sugar-3",
+      "flower-gold",
+      "three-lamps",
+      "luna-photo",
+      "bridge-crossing",
+      "ending",
+      "free-roam"
+    ],
+    "crossingMusicPlays": 1,
+    "crossingPetalBursts": 30,
+    "stoppedPetalBursts": [
+      39,
+      39
+    ],
+    "musicDecoded": true,
+    "portrait": "user-reference-v2",
+    "city": "ready",
+    "town": "ready",
+    "browserErrors": []
+  },
+  "checks": [
+    "test-story",
+    "test-v2",
+    "test-journey",
+    "test-audio-journey",
+    "test-gestures"
+  ],
+  "notTested": [
+    "Live webcam hand recognition"
+  ],
+  "pendingAssets": [
+    "Detailed courtyard house module",
+    "Optional dog sit/sniff/pet clips"
+  ],
+  "deployment": "Local only",
+  "photoMusicUpdate": {
+    "musicBoxDecoded": true,
+    "lullabyDecoded": true,
+    "verifiedTransitions": [
+      "outside: bird-song-musicbox",
+      "bridge: remember-me",
+      "outside: bird-song-musicbox"
+    ],
+    "onceOnlyPlayCount": 1,
+    "portrait": "Generated extraction from user illustration, mustard shawl and plum blouse",
+    "unitTests": "bridge scope, pause, mute, restore offset and once-only source passed"
+  },
+  "altarFix": {
+    "tableWidthMetres": 1.8,
+    "topHeightMetres": 0.76,
+    "bakedPortraitAltarRemovedFromScene": true,
+    "singlePhotoMesh": true,
+    "emptyFrameVerified": true,
+    "continueDisabledDuringPlacement": true,
+    "completedPhotoPosition": [
+      0.2,
+      1.053,
+      37.506
+    ],
+    "matchesFrameOpening": true,
+    "photoStateTestsPassed": true,
+    "browserReloadVerified": true,
+    "browserErrors": []
+  },
+  "restoredAltar": {
+    "widthMetres": 2.6,
+    "retainedOriginalOrnaments": true,
+    "oldPortraitAssembliesRemoved": 4,
+    "oldFrameSupportsRemoved": 3,
+    "singlePhotoPlacementBrowserVerified": true,
+    "positionMatchesFrame": [
+      0.2,
+      1.093,
+      37.506
+    ]
+  },
+  "dog": {
+    "browserGuideVerified": true,
+    "browserInteractionVerified": true,
+    "browserBridgeVerified": true,
+    "bridgeX": -0.65,
+    "bridgeZ": 23.29,
+    "walkTimeObserved": 2.509,
+    "originalSourceUnmodified": true,
+    "positionSaved": true
+  }
+}

@@ -1,0 +1,123 @@
+{
+  "version": "local-v3.4-ornate-altar-dog",
+  "deployment": {
+    "url": "https://weini-liudeng.wenshu2025.workers.dev",
+    "versionId": "644e5924-2ea0-4bba-9bbb-c8a5b9471e0c",
+    "dateLocal": "2026-10-25"
+  },
+  "newOrChanged": [
+    {
+      "path": "main.js",
+      "bytes": 56070,
+      "sha256": "26b3abffdef2251648a80ee8490dbcdbc073d6c7c4145e5f7eb1d823724fcf48"
+    },
+    {
+      "path": "index.html",
+      "bytes": 7164,
+      "sha256": "ee39764a9e0d45abb7d4385ea11c56f45b1d125f32653abca8d6529fc9e35cfe"
+    },
+    {
+      "path": "style.css",
+      "bytes": 13579,
+      "sha256": "9cee5fdc69f70bd41c87d141ffe9421c15b2b30f1b762c2f2b47644e23962d12"
+    },
+    {
+      "path": "audio.js",
+      "bytes": 6413,
+      "sha256": "44294aaa4d938c876f514c793ad9676144c57f25a5bf39c925b1f056e8933b3e"
+    },
+    {
+      "path": "story.js",
+      "bytes": 3237,
+      "sha256": "0d5df1a8460497b17e13b93f42c2de0afdca42a3ef26aeb57bb6c719e792d7b3"
+    },
+    {
+      "path": "journey.js",
+      "bytes": 5655,
+      "sha256": "a0b9a72eb6cce6928c8ed1f9bb39d75843f2c0847cd2fa5ea6c6831465400387"
+    },
+    {
+      "path": "journey-state.js",
+      "bytes": 1053,
+      "sha256": "312c008df37d0e38736d5c0b9427d3904a7e18446688811060a75e66a3c26320"
+    },
+    {
+      "path": "world-depth.js",
+      "bytes": 2455,
+      "sha256": "c18b030945d86aa18e542c55bfa721c7960170a2dc5b1bd9db7ea91770ad3b80"
+    },
+    {
+      "path": "assets/audio/remember-me-lullaby.mp3",
+      "bytes": 2796191,
+      "sha256": "233cdbf6c2c0fcc76b40f286ad7912079f1ee3686e11b19433beb3b8219c4183"
+    },
+    {
+      "path": "assets/images/afterlife-city-v1.png",
+      "bytes": 2066104,
+      "sha256": "8f6c780f5812b4d990a77b20e2678182901c1fb16b2471d0e20f458ac725dceb"
+    },
+    {
+      "path": "assets/images/living-town-v1.png",
+      "bytes": 1931888,
+      "sha256": "d61bf4024988020911e7610467023aa5fcf923e4d60857879c5da5e187c43efe"
+    },
+    {
+      "path": "assets/images/elena-living-portrait-v1.png",
+      "bytes": 2626472,
+      "sha256": "9c7c7210e17124057e6b8b7031ddd082fd394b5576ee5308baec6850746255dd"
+    },
+    {
+      "path": "assets/audio/bird-song-musicbox.mp3",
+      "sha256": "e04ffbe7445d715fa38a7c3a883a67e11b01be387505fb31c37f343e44f86b63",
+      "bytes": 3313206
+    },
+    {
+      "path": "assets/images/elena-living-portrait-v2.png",
+      "sha256": "630e30dbc3a5fd29abbdc90dbdc7d423095abf62a152069de376fa688174a598",
+      "bytes": 2400311
+    },
+    {
+      "path": "assets/models/altar-remembrance-game.glb",
+      "sha256": "eaaa937d5b6031ddfbf99c53bea8ea42524f2e05258985f0060fa5d9b054d55f",
+      "bytes": 11792168
+    },
+    {
+      "path": "assets/models/dante-walk-game.glb",
+      "sha256": "92527b42c09d353c2b0853b5ed4a4efa2a2f414fd6fc4b23c77565e4675e6173",
+      "bytes": 2179360
+    }
+  ],
+  "baseModelsManifest": "asset-manifest-v2.json",
+  "sourceMusic": [
+    "User supplied 鸟之诗 (八音盒版) - 折戸伸治.mp3",
+    "User supplied Remember Me (Lullaby) - Gael Garcia Bernal.mp3"
+  ],
+  "generatedArt": "Built-in imagegen; original outputs retained under Codex generated_images",
+  "pending3D": [
+    "Detailed courtyard house module",
+    "Optional dog sniff/sit/pet animations"
+  ],
+  "portrait": "User reference illustration: extracted and perspective-corrected with built-in imagegen",
+  "midground": "Removed all procedural box houses, support piers and unsupported arch placeholders; kept city and town plates and user models",
+  "altar": {
+    "widthMetres": 2.6,
+    "portraits": 1,
+    "construction": "Derivative of original altar: four portrait assemblies and three support stands removed from scene graph; original ornaments and table retained. Front empty frame receives photo.",
+    "originalAssetPreserved": true
+  },
+  "dog": {
+    "source": "output/dante-walk-tripo.glb",
+    "runtime": "assets/models/dante-walk-game.glb",
+    "sourceClip": "preset:quadruped:walk",
+    "durationSeconds": 2.5833333333,
+    "runtimeClip": "walk",
+    "heightMetres": 0.68,
+    "behaviours": [
+      "guide to nearby remaining keepsake",
+      "wait and look toward player",
+      "walk on bridge",
+      "optional head-pat dialogue"
+    ],
+    "limitations": "Only walk is supplied; neutral stand and small head response are procedural, no dedicated sniff/sit/pet clips"
+  }
+}

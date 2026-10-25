@@ -1,0 +1,18 @@
+{
+  "project": "weini-liudeng",
+  "provider": "Cloudflare Workers Static Assets",
+  "url": "https://weini-liudeng.wenshu2025.workers.dev",
+  "versionId": "644e5924-2ea0-4bba-9bbb-c8a5b9471e0c",
+  "gameVersion": "local-v3.4-ornate-altar-dog",
+  "publishedDateLocal": "2026-10-25",
+  "timezone": "Asia/Shanghai",
+  "source": "dist",
+  "browserVerified": {
+    "loadedModels": 18,
+    "portrait": "user-reference-v2",
+    "city": "ready",
+    "town": "ready",
+    "errors": []
+  },
+  "qrVerified": true
+}

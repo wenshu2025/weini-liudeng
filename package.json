@@ -1,0 +1,15 @@
+{
+  "name": "weini-liudeng",
+  "version": "3.4.0",
+  "private": true,
+  "description": "为你留灯 · 3D narrative game",
+  "scripts": {
+    "start": "python3 -m http.server 8769 --bind 127.0.0.1 --directory game",
+    "assets": "python3 scripts/fetch_assets.py",
+    "build": "python3 scripts/build_cloudflare.py",
+    "test": "node game/test-story.mjs && node game/test-v2.mjs && node game/test-photo-state.mjs && node game/test-journey.mjs && node game/test-audio-journey.mjs && node game/test-gestures.mjs",
+    "test:assets": "node game/test-restored-assets.mjs",
+    "deploy": "npm run build && npx wrangler@4.151.3 deploy --config deploy/cloudflare/wrangler.jsonc"
+  },
+  "type": "module"
+}

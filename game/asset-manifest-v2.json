@@ -1,0 +1,201 @@
+{
+  "title": "为你留灯 · 手心里的记忆",
+  "version": "local-v2",
+  "deployment": "Local only; Cloudflare not updated",
+  "models": [
+    {
+      "path": "assets/models/bridge-straight-game.glb",
+      "bytes": 9925704,
+      "sha256": "2231f61b69fd2a0238708c71d83c378c3112dfa4e0a68c8bc7c25116842af8e3",
+      "clips": []
+    },
+    {
+      "path": "assets/models/kitchen-game.glb",
+      "bytes": 11179788,
+      "sha256": "b53e59250431dc45598d6d65e517008462137f2ef6f9727d20e365a8f691802f",
+      "clips": []
+    },
+    {
+      "path": "assets/models/altar-game.glb",
+      "bytes": 11792140,
+      "sha256": "68bf32fae1edf70f0e38609f569682756c6a38a4df2c0d6217fd723c94e90e64",
+      "clips": []
+    },
+    {
+      "path": "assets/models/chapel-game.glb",
+      "bytes": 11518896,
+      "sha256": "bcedbbbbde11624f8e915ae513e8ec158c9f033b870e38c1c8dfddc4aea11c9a",
+      "clips": []
+    },
+    {
+      "path": "assets/models/arch-game.glb",
+      "bytes": 11889772,
+      "sha256": "8710728e9df5e95f40b6a0d40be29e587020de1f536ca55f278e836d6922da15",
+      "clips": []
+    },
+    {
+      "path": "assets/models/shoe-v2-game.glb",
+      "bytes": 2990884,
+      "sha256": "2972f89be90f31d6a8a37cbf0c8bdc1ce9becd2034d51c184ad35dba753064fe",
+      "clips": []
+    },
+    {
+      "path": "assets/models/book-closed-game.glb",
+      "bytes": 1785860,
+      "sha256": "8313b196aba6094ccfac4ba888dc63b48feefd3b1be7fdb2b6b69e26e3fb768b",
+      "clips": []
+    },
+    {
+      "path": "assets/models/book-open-game.glb",
+      "bytes": 1773752,
+      "sha256": "582886567542c1b6cb8b6e320063ee7b33bdc2e32dca6cd1dc220c5c47358c85",
+      "clips": []
+    },
+    {
+      "path": "assets/models/paper-flower-game.glb",
+      "bytes": 1649100,
+      "sha256": "a9189191aee7fdc46fa302fa689b30ef3ddcae07fde66b66f10245acf0665365",
+      "clips": []
+    },
+    {
+      "path": "assets/models/frame-empty-game.glb",
+      "bytes": 1495356,
+      "sha256": "668b64167df96fbfe3c550b1a0c7fc8b0aa2eb0a87761be516f306115a4fec64",
+      "clips": []
+    },
+    {
+      "path": "assets/models/lantern-game.glb",
+      "bytes": 2821600,
+      "sha256": "5262a596d6cc6b40ecd05cb44c408370c7d5b138653be2de278711b5c090f21f",
+      "clips": []
+    },
+    {
+      "path": "assets/models/elena-walk-tripo-game.glb",
+      "bytes": 2400024,
+      "sha256": "c7940ed409170dc31856d084764cf4b6540c2908510a96ca95c1f727d435f27f",
+      "clips": [
+        "walk"
+      ]
+    },
+    {
+      "path": "assets/models/luna-new-game.glb",
+      "bytes": 12961952,
+      "sha256": "b1de332406c9edf868e898c6c6a30cceb8323bfe4ccab7bd58560a010dc7287f",
+      "clips": [
+        "model-action"
+      ],
+      "sourceFile": "角色NPC文件夹/小女孩慢跑.glb"
+    },
+    {
+      "path": "assets/models/apprentice-walk-pickup-tripo-game.glb",
+      "bytes": 2749888,
+      "sha256": "c5a39df7e94fa9c0c40599e30889fe35512b8b52f47a256ab30e708fe36127d0",
+      "clips": [
+        "walk",
+        "角色先自然站立，随后缓慢屈膝并向前弯腰，右"
+      ]
+    },
+    {
+      "path": "assets/models/npc-baker-game.glb",
+      "bytes": 10577072,
+      "sha256": "9328d0317cb4a67eb7eababf0dabc31d0ae169641e53f3b1e5a0034a4bddabdc",
+      "clips": [],
+      "sourceFile": "角色NPC文件夹/rosita.glb"
+    },
+    {
+      "path": "assets/models/npc-musician-game.glb",
+      "bytes": 9460472,
+      "sha256": "ce779e4f77c57a6adcdec3f80225170fdafd25a636558f7fd05bf0c33b0650da",
+      "clips": [],
+      "sourceFile": "角色NPC文件夹/hector.glb"
+    },
+    {
+      "path": "assets/models/npc-lamplighter-game.glb",
+      "bytes": 12387564,
+      "sha256": "e5be4e66e8193b9a852d7b02de117e41ac90cf1874252a4e63c586ba2ba78d56",
+      "clips": [
+        "model-action"
+      ],
+      "sourceFile": "角色NPC文件夹/animation.glb"
+    }
+  ],
+  "gestureAssets": [
+    {
+      "path": "vendor/mediapipe/SOURCE.txt",
+      "bytes": 424,
+      "sha256": "8e23bdded8a52cd117ff9e6017b9201f4176333c4cf162bd3fbd202112261628"
+    },
+    {
+      "path": "vendor/mediapipe/vision_bundle.mjs",
+      "bytes": 137160,
+      "sha256": "de83c48ff329717a27aeb528d5ef5f47f077c628a5302dc483aca5b513e7464b"
+    },
+    {
+      "path": "vendor/mediapipe/wasm/vision_wasm_nosimd_internal.wasm",
+      "bytes": 10647962,
+      "sha256": "924274fcd5ac8985f6570a8573e7971b7bd2d580ba1b8f3beb0ba8f95db6347c"
+    },
+    {
+      "path": "vendor/mediapipe/wasm/vision_wasm_nosimd_internal.js",
+      "bytes": 204669,
+      "sha256": "9f8fc960e363f0fb2f42f7937b97ae9cf9a5630490f71031fa90caa9bb121938"
+    },
+    {
+      "path": "vendor/mediapipe/wasm/vision_wasm_internal.wasm",
+      "bytes": 11453626,
+      "sha256": "cb3ec20026a9aecc2a81a93c25630ceb5389297ddb7a5f0bd61dd09cde606b9b"
+    },
+    {
+      "path": "vendor/mediapipe/wasm/vision_wasm_internal.js",
+      "bytes": 204816,
+      "sha256": "6f6b86509cf9e163ea1cfec7edc8cf53732699c04781e4c21c557c1ba402310e"
+    },
+    {
+      "path": "assets/gestures/hand_landmarker.task",
+      "bytes": 7819105,
+      "sha256": "fbc2a30080c3c557093b5ddfc334698132eb341044ccee322ccf8bcf3607cde1"
+    }
+  ],
+  "coreFiles": [
+    {
+      "path": "activities.js",
+      "sha256": "e9a4e1f694821dcb532698096410ef7b2a2663bb448f53f47542c37156b1ae33"
+    },
+    {
+      "path": "audio.js",
+      "sha256": "66b31f23ad1d849756c021b95e441195ff21dc1def62934ec9b41c41da489faf"
+    },
+    {
+      "path": "gesture-math.js",
+      "sha256": "67f0e5bfd61f9bdd0dcabf11de097a8d2f4aa0aaab80f880165144ecd65a4efe"
+    },
+    {
+      "path": "gesture-worker.js",
+      "sha256": "72d3894de5002b6193b9ca343b7d9b0c744c89981f967b63e88df5269896d479"
+    },
+    {
+      "path": "gestures.js",
+      "sha256": "881ad22c15e87da3c8bd11e6e8b07a848242952b15c936b12072711350d0871a"
+    },
+    {
+      "path": "index.html",
+      "sha256": "5accf682ae33dc9010c427e201ea5320aaa6cbcc171392a2d5acbaf3381f4eb5"
+    },
+    {
+      "path": "main.js",
+      "sha256": "3d322bbf1f0442a6d1e00f90b0b7f4434d6e79c651d3bb2726289f1ff82eb494"
+    },
+    {
+      "path": "npc-story.js",
+      "sha256": "af22583c0a04b8edd972beb11047a28f31045795e23b1dd1b66fcdfe2295f6be"
+    },
+    {
+      "path": "story.js",
+      "sha256": "9c4d123c8447c22022e82b912d9410284fa267fb7b091a0581ccf9d383f8eb21"
+    },
+    {
+      "path": "style.css",
+      "sha256": "e2f1a2132f7dc75738781de18c2342ea21f6320fccbe13a25d80610dd1b8e5df"
+    }
+  ]
+}

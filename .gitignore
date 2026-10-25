@@ -1,0 +1,17 @@
+*.env
+*.env.*
+.env
+.env.*
+!.env.example
+.DS_Store
+__pycache__/
+*.pyc
+node_modules/
+.wrangler/
+game/assets/
+game/vendor/
+game/backup*/
+game/screenshots/
+deploy/cloudflare/dist/
+*.zip
+*.log
