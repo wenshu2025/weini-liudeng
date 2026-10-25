@@ -196,5 +196,11 @@
     "source": "codex-clipboard-e057aae7-5956-4da3-853e-08768ca62713.png",
     "kind": "feedback",
     "caption": "用户反馈截图：旧祭坛已有奶奶照片，放入动作不成立"
+  },
+  {
+    "file": "assets/npc-trio-hd.webp",
+    "source": "实际运行 GLB：npc-baker-game.glb、npc-musician-game.glb、npc-lamplighter-game.glb",
+    "kind": "model-review",
+    "caption": "Lux3D 三位 NPC 实际模型高清横图，1920×1080；非场景实机截图"
   }
 ]

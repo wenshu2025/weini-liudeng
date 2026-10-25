@@ -6,21 +6,22 @@ const assets=[
 ['纸花','paper-flower','4334624','input-paper-flower','折痕是亲手做过的证据。','第三段记忆：折花与颜色选择。'],
 ['空相框','frame-empty','4334628','input-frame-empty','为最后放入的照片留一个位置。','照片独立渲染，避免模型里已有照片造成叙事冲突。'],
 ['记忆灯笼','lantern','4334632','input-lantern','记忆汇聚成一盏可以点亮的灯。','灯体来自模型，火焰与光效由游戏实时实现。'],
-['面包师 Rosa','npc-baker','4331611','v2-npc','让食谱记忆有一个可以回应的人。','Lux3D 原始角色 rosita；游戏中作为面包师。'],
-['乐师 Mateo','npc-musician','4331021','v2-npc','让等待与音乐进入街巷。','Lux3D 原始角色 hector；游戏中作为乐师。'],
-['守灯人 Ama','npc-lamplighter','4331251','v2-npc','让点灯成为有意义的选择。','Lux3D imelda 原型，经动画衍生版进入游戏。']
-];let selected=0,viewer;
-function selectAsset(i){selected=i;const a=assets[i];$('#assetName').textContent=a[0];$('#assetMeaning').textContent=a[4];$('#assetTask').textContent='Lux3D · '+a[2];$('#assetUse').textContent=a[5];$('#assetFallback').src=`assets/${a[3]}.webp`;$('#assetFallback').alt=a[0]+'参考与验收图';$('#assetFallback').hidden=false;$('#assetStatus').textContent=i<6?'生成输入参考 · 可载入实际 GLB':'NPC 实机截图 · 可载入实际 GLB';document.querySelectorAll('#assetTabs button').forEach((b,n)=>{b.classList.toggle('active',i===n);b.setAttribute('aria-pressed',i===n)});if(viewer)loadModel();}
-$('#assetTabs').innerHTML=assets.map((a,i)=>`<button data-asset="${i}">${esc(a[0])}</button>`).join('');$('#assetTabs').onclick=e=>{if(e.target.dataset.asset)selectAsset(+e.target.dataset.asset)};
-async function loadModel(){const a=assets[selected];$('#assetStatus').textContent='正在读取真实 GLB…';try{await viewer.load(`/assets/models/${a[1]}-game.glb`);$('#assetFallback').hidden=true;$('#assetStatus').textContent='实际 GLB · 拖动旋转查看';}catch(e){$('#assetStatus').textContent='模型暂未载入，可继续查看参考图';console.error(e)}}
-$('#load3d').onclick=async()=>{try{if(!viewer){const {createViewer}=await import('./viewer.js');viewer=createViewer($('#assetStage'));$('#rotateToggle').hidden=false;}await loadModel();}catch(e){$('#assetStatus').textContent='当前设备暂不支持三维预览';}};
+['面包师 Rosa','npc-baker','4331611',null,'让食谱记忆有一个可以回应的人。','Lux3D 生成模型、骨骼与动画；游戏身份为点心摊主。'],
+['乐师 Mateo','npc-musician','4331021',null,'让等待与音乐进入街巷。','Lux3D 生成模型、骨骼与动画；游戏身份为广场乐师。'],
+['守灯人 Ama','npc-lamplighter','4331251',null,'让点灯成为有意义的选择。','Lux3D 生成模型、骨骼与动画；游戏身份为守灯人。']
+];let selected=0,viewer,viewerReady,loadRequest=0;
+function selectAsset(i,auto=false){selected=i;const a=assets[i];$('#assetName').textContent=a[0];$('#assetMeaning').textContent=a[4];$('#assetTask').textContent='Lux3D · '+a[2];$('#assetUse').textContent=a[5];if(a[3]){$('#assetFallback').src=`assets/${a[3]}.webp`;$('#assetFallback').alt=a[0]+'生成输入参考';$('#assetFallback').hidden=false;}else{$('#assetFallback').hidden=true;$('#assetFallback').removeAttribute('src');}$('#assetStatus').textContent=i<6?'生成输入参考 · 可载入实际 GLB':'正在载入 NPC 实际 GLB…';document.querySelectorAll('#assetTabs button').forEach((b,n)=>{b.classList.toggle('active',i===n);b.setAttribute('aria-pressed',i===n)});if(auto||viewer||i>=6)loadModel();}
+$('#assetTabs').innerHTML=assets.map((a,i)=>`<button data-asset="${i}">${esc(a[0])}</button>`).join('');$('#assetTabs').onclick=e=>{if(e.target.dataset.asset)selectAsset(+e.target.dataset.asset,true)};
+async function ensureViewer(){if(!viewerReady)viewerReady=import('./viewer.js').then(({createViewer})=>{viewer=createViewer($('#assetStage'));const on=!matchMedia('(prefers-reduced-motion: reduce)').matches;$('#rotateToggle').hidden=false;$('#rotateToggle').setAttribute('aria-pressed',on);$('#rotateToggle').textContent=on?'暂停旋转':'自动旋转';return viewer}).catch(e=>{viewerReady=null;throw e});return viewerReady;}
+async function loadModel(){const index=selected,a=assets[index],request=++loadRequest;$('#assetStatus').textContent='正在读取真实 GLB…';$('#assetStage').classList.add('is-loading');try{const v=await ensureViewer();if(request!==loadRequest)return;await v.load(`/assets/models/${a[1]}-game.glb`);if(request!==loadRequest)return;$('#assetFallback').hidden=true;$('#assetStatus').textContent=a[0]+' · 实际 GLB · 拖动旋转查看';}catch(e){if(request!==loadRequest)return;$('#assetStatus').textContent='模型暂未载入，请点击重新载入';console.error(e);}finally{if(request===loadRequest)$('#assetStage').classList.remove('is-loading');}}
+$('#load3d').onclick=()=>loadModel();
 $('#rotateToggle').onclick=e=>{const on=e.target.getAttribute('aria-pressed')!=='true';e.target.setAttribute('aria-pressed',on);e.target.textContent=on?'暂停旋转':'自动旋转';viewer?.setRotate(on)};
 $('#luxTaskTable').innerHTML=assets.slice(0,6).map(a=>`<div class="task-row"><span>${a[0]}</span><span>${a[2]}</span><span>已进入游戏</span></div>`).join('');selectAsset(0);
 const rounds=[
 ['asset','立意与路线：从最后一盏灯，到为你留灯','把“收集道具”改为“重新做一次被关心的动作”。先确定三件旧物、三段回忆、花桥与最后的照片。','Codex：剧情拆解、路线与资产规划。概念图只作为美术方向。','concept-world','概念 / 前期规划'],
 ['asset','Lux3D：把旧物风格板变成可用模型','为每件旧物准备单独参考：红鞋、合上与展开的食谱、纸花、空相框、灯笼。生成后逐一检查前后结构、材质和比例。','Lux3D v3.0-standard · 目标面数 30,000；任务编号保存在图档中。','prop-board','生成输入 / 旧物风格板'],
 ['asset','红鞋重做：从高帮鞋到有补丁的低帮鞋','用户明确指定新版左侧红鞋。保留磨损、浅色鞋带与两块缝补细节，重新准备单件输入并生成新 GLB；旧版不进入最终资产包。','Lux3D：4334159 → 4334864；新生成，不是简单替换贴图。','input-shoe-v2','输入参考 / 第二版红鞋'],
-['asset','人物与 NPC：先统一角色，再补动作','人物参考先检查面部与整体风格；Lux3D 角色库保留 13 项记录，游戏选入三位有剧情任务的 NPC。','Lux3D：关键 NPC 原始模型；角色库不等于全部进入场景。','elena-face','角色检查 / 非实机镜头'],
+['asset','人物与 NPC：先统一角色，再补动作','人物参考先检查面部与整体风格；Lux3D 角色库保留 13 项记录，游戏选入三位有剧情任务的 NPC。','Lux3D：关键 NPC 模型、骨骼绑定与动画；角色库按剧情选择接入。','elena-face','角色检查 / 非实机镜头'],
 ['play','动画路线调整：改用 Tripo 网页生成','最初检查程序化动作，随后按照用户要求转向 Tripo 网页动画。人物需要行走，学徒需要拾取；导入后处理比例、播放与场景位置。','Tripo：动作；Codex：AnimationMixer 与游戏状态整合。','animation-preview','早期动作检查 / 非最终效果'],
 ['play','第一版可玩：让三件旧物形成完整路线','搭建街区、旧物互动、记忆灯、花桥与结局，先验证从开场到结束可以完整走通。','Three.js：场景、碰撞、交互和状态；Codex：开发与检查。','v1-title','v1 / 游戏实机'],
 ['scene','修正空间：使用生成的桥，清理漂浮物','根据试玩反馈修正桥的使用和位置，处理悬空桥、角色持框与声音入口，让空间关系支持叙事。','生成场景资产进入 Three.js；位置、尺度与可走区域单独调校。','v1-bridge','早期桥段 / 游戏实机'],

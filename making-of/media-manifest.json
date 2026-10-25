@@ -199,6 +199,12 @@
       "sha256": "5256b801c37244cf69b460428c7ee7c3dd4dd2e8d0f9324b6214e99ba082c451"
     },
     {
+      "path": "making-of/assets/npc-trio-hd.webp",
+      "url": "https://weini-liudeng-making-of.netlify.app/assets/npc-trio-hd.webp",
+      "bytes": 135218,
+      "sha256": "c9566ccb4d38c96b1c3fab7f7cb293a45dd0f0ca997fd253b24e1d8bde151d97"
+    },
+    {
       "path": "making-of/assets/petal-steps.webp",
       "url": "https://weini-liudeng-making-of.netlify.app/assets/petal-steps.webp",
       "bytes": 104706,

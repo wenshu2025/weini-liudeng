@@ -43,7 +43,7 @@
       "quote": "老配方，也可以有你今天的心意。",
       "description": "在广场回应玩家选择的糖量。她让一份做过的点心，变成仍在照顾别人的记忆。",
       "chapter": "当前旅程 · 食谱互动",
-      "source": "Lux3D · rosita · cn:4331611",
+      "source": "Lux3D · rosita · cn:4331611；模型、骨骼绑定与动画均由 Lux3D 生成",
       "status": "live",
       "image": "assets/characters/rosita.webp"
     },
@@ -54,7 +54,7 @@
       "quote": "每亮一盏灯，曲子就能再往下走。",
       "description": "用旋律接续旧鞋的回忆。旅程结束后，他桌上的那封信为下一段故事留下一点牵挂。",
       "chapter": "当前旅程 · 音乐与下一章线索",
-      "source": "Lux3D · hector · cn:4331021",
+      "source": "Lux3D · hector · cn:4331021；模型、骨骼绑定与动画均由 Lux3D 生成",
       "status": "live",
       "image": "assets/characters/hector.webp"
     },
@@ -65,7 +65,7 @@
       "quote": "不用替她走完，只要让她知道有人同行。",
       "description": "守着桥灯，说明旧物与点灯的关系。她给玩家方向，也允许每个人按自己的速度告别。",
       "chapter": "当前旅程 · 桥灯与指引",
-      "source": "Lux3D · imelda · cn:4331251；运行使用其动画衍生版",
+      "source": "Lux3D · imelda · cn:4331251；运行使用其动画衍生版；模型、骨骼绑定与动画均由 Lux3D 生成",
       "status": "live",
       "image": "assets/characters/imelda.webp"
     },
