@@ -25,6 +25,102 @@
       "sha256": "d05787704dcadc3e088bc60b3716b8b5a7ecabe7f3e4f3ae66ea3afa6e9738f2"
     },
     {
+      "path": "making-of/assets/characters/apprentice.webp",
+      "url": "https://weini-liudeng.wenshu2025.workers.dev/making-of/assets/characters/apprentice.webp",
+      "bytes": 17140,
+      "sha256": "a614491bbaae56cf9c5098fd5156cd992fd7835129d3b23a4c2f3b1934db49c8"
+    },
+    {
+      "path": "making-of/assets/characters/chicharron.webp",
+      "url": "https://weini-liudeng.wenshu2025.workers.dev/making-of/assets/characters/chicharron.webp",
+      "bytes": 14266,
+      "sha256": "5b44ffdd9eca81736a10f98f9c387c69f7548bfad1723990daab8a238ce3d58c"
+    },
+    {
+      "path": "making-of/assets/characters/dante.webp",
+      "url": "https://weini-liudeng.wenshu2025.workers.dev/making-of/assets/characters/dante.webp",
+      "bytes": 12706,
+      "sha256": "a645769b5ac717a405157cf80e79b0dea58f61f1490b76c2f096220ad19288b8"
+    },
+    {
+      "path": "making-of/assets/characters/elena.webp",
+      "url": "https://weini-liudeng.wenshu2025.workers.dev/making-of/assets/characters/elena.webp",
+      "bytes": 16208,
+      "sha256": "ec8948a37e8afdcd4caa97568728cfa4ed1a307a511dd5b42f353d619aa4ed9d"
+    },
+    {
+      "path": "making-of/assets/characters/elena_skeleton.webp",
+      "url": "https://weini-liudeng.wenshu2025.workers.dev/making-of/assets/characters/elena_skeleton.webp",
+      "bytes": 12148,
+      "sha256": "6afb4aaa90d03d8e26d601d5b57d1c4c2cb585e2a6ade024798c2d91349974a0"
+    },
+    {
+      "path": "making-of/assets/characters/ernesto.webp",
+      "url": "https://weini-liudeng.wenshu2025.workers.dev/making-of/assets/characters/ernesto.webp",
+      "bytes": 13020,
+      "sha256": "12f4b7b8999db2dc8287d5f56cebd76795be00504e0261e6d76d19d469844bae"
+    },
+    {
+      "path": "making-of/assets/characters/hector.webp",
+      "url": "https://weini-liudeng.wenshu2025.workers.dev/making-of/assets/characters/hector.webp",
+      "bytes": 15652,
+      "sha256": "438a608016fe2ac940e17b721feb84dabab0bfc80d00928855f76fa74401e0d1"
+    },
+    {
+      "path": "making-of/assets/characters/imelda.webp",
+      "url": "https://weini-liudeng.wenshu2025.workers.dev/making-of/assets/characters/imelda.webp",
+      "bytes": 14824,
+      "sha256": "b2903df60ef87941a633b334f63758ed91725804c425341ff2a73373839cfd0f"
+    },
+    {
+      "path": "making-of/assets/characters/luna.webp",
+      "url": "https://weini-liudeng.wenshu2025.workers.dev/making-of/assets/characters/luna.webp",
+      "bytes": 16716,
+      "sha256": "42b84b894ce55639b779ab73546783214275c214f301526f9d35cbfbb3ae65b3"
+    },
+    {
+      "path": "making-of/assets/characters/miguel.webp",
+      "url": "https://weini-liudeng.wenshu2025.workers.dev/making-of/assets/characters/miguel.webp",
+      "bytes": 18164,
+      "sha256": "cf074540909fa07fad5dad0b8d511fda12bbdee9a9cf75452bf02af9e0abd44c"
+    },
+    {
+      "path": "making-of/assets/characters/papa_felipe.webp",
+      "url": "https://weini-liudeng.wenshu2025.workers.dev/making-of/assets/characters/papa_felipe.webp",
+      "bytes": 11696,
+      "sha256": "82590114c8dd8169f042e5db475f7518821ca32016d606c258ce72a723db47bb"
+    },
+    {
+      "path": "making-of/assets/characters/papa_julio.webp",
+      "url": "https://weini-liudeng.wenshu2025.workers.dev/making-of/assets/characters/papa_julio.webp",
+      "bytes": 12570,
+      "sha256": "62436836ae09ac09c71b9a5f5f3995cc4bdb82f9cce5bb1bb39d002fd4db6f1f"
+    },
+    {
+      "path": "making-of/assets/characters/papa_oscar.webp",
+      "url": "https://weini-liudeng.wenshu2025.workers.dev/making-of/assets/characters/papa_oscar.webp",
+      "bytes": 12662,
+      "sha256": "f54a5e30c3450f9ff69db0cb30c49eb98b7d80e7c5eebe71db28f62e75315a6e"
+    },
+    {
+      "path": "making-of/assets/characters/rosita.webp",
+      "url": "https://weini-liudeng.wenshu2025.workers.dev/making-of/assets/characters/rosita.webp",
+      "bytes": 15678,
+      "sha256": "3c44dfb38357ddf5ee7991be0c8833be0eb440d72ba0eecf10cb64b5dc41487c"
+    },
+    {
+      "path": "making-of/assets/characters/tall_skeleton.webp",
+      "url": "https://weini-liudeng.wenshu2025.workers.dev/making-of/assets/characters/tall_skeleton.webp",
+      "bytes": 14628,
+      "sha256": "55e6a166aa4e07747e7f9f9dbe2e4d2420ad4d3a2589e2937c3c1f80131bcb51"
+    },
+    {
+      "path": "making-of/assets/characters/victoria.webp",
+      "url": "https://weini-liudeng.wenshu2025.workers.dev/making-of/assets/characters/victoria.webp",
+      "bytes": 10826,
+      "sha256": "a8fcc41b9b7725e0cacfeb953c7549c39e1c58c0f1855ce29691a8a759be4057"
+    },
+    {
       "path": "making-of/assets/city-barrier.webp",
       "url": "https://weini-liudeng.wenshu2025.workers.dev/making-of/assets/city-barrier.webp",
       "bytes": 83286,
@@ -101,12 +197,6 @@
       "url": "https://weini-liudeng.wenshu2025.workers.dev/making-of/assets/input-shoe.webp",
       "bytes": 205602,
       "sha256": "5256b801c37244cf69b460428c7ee7c3dd4dd2e8d0f9324b6214e99ba082c451"
-    },
-    {
-      "path": "making-of/assets/judging-rules.webp",
-      "url": "https://weini-liudeng.wenshu2025.workers.dev/making-of/assets/judging-rules.webp",
-      "bytes": 89434,
-      "sha256": "a7a43ba6603e84206caaa2c8e5d17feb67ee911ce61e3e9abb1643053e3eb5ea"
     },
     {
       "path": "making-of/assets/petal-steps.webp",

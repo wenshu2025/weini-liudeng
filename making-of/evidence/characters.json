@@ -1,0 +1,184 @@
+{
+  "sourceArchive": "角色NPC文件夹.zip",
+  "currentCount": 7,
+  "futureCount": 9,
+  "characters": [
+    {
+      "id": "apprentice",
+      "name": "桥灯学徒",
+      "role": "玩家 · 记忆的接灯人",
+      "quote": "替她把灯点亮，也陪她慢慢走。",
+      "description": "寻找三件旧物，亲手系鞋、调味和折花，将散落的关心重新连接起来。",
+      "chapter": "当前旅程 · 玩家角色",
+      "source": "当前游戏运行模型",
+      "status": "live",
+      "image": "assets/characters/apprentice.webp"
+    },
+    {
+      "id": "elena",
+      "name": "伊莲娜",
+      "role": "奶奶 · 花桥上的同行者",
+      "quote": "她忘了路，却还记得怎么照顾人。",
+      "description": "旧鞋、食谱与纸花唤回她日常里的温柔。三盏灯亮起后，她与玩家一起走向人间的暖光。",
+      "chapter": "当前旅程 · 故事主角",
+      "source": "当前游戏运行模型",
+      "status": "live",
+      "image": "assets/characters/elena.webp"
+    },
+    {
+      "id": "luna",
+      "name": "露娜",
+      "role": "孙女 · 把思念带向明天的人",
+      "quote": "这一次，换我为你留一盏灯。",
+      "description": "在旅程末尾将奶奶的生前照片放进相框。玩家留下的味道与花色，也成为她继续生活的一部分。",
+      "chapter": "当前旅程 · 人间的回应",
+      "source": "当前游戏运行模型",
+      "status": "live",
+      "image": "assets/characters/luna.webp"
+    },
+    {
+      "id": "rosita",
+      "name": "罗莎 Rosa",
+      "role": "点心摊主 · 旧食谱的见证人",
+      "quote": "老配方，也可以有你今天的心意。",
+      "description": "在广场回应玩家选择的糖量。她让一份做过的点心，变成仍在照顾别人的记忆。",
+      "chapter": "当前旅程 · 食谱互动",
+      "source": "Lux3D · rosita · cn:4331611",
+      "status": "live",
+      "image": "assets/characters/rosita.webp"
+    },
+    {
+      "id": "hector",
+      "name": "马特奥 Mateo",
+      "role": "广场乐师 · 未送出信件的保管人",
+      "quote": "每亮一盏灯，曲子就能再往下走。",
+      "description": "用旋律接续旧鞋的回忆。旅程结束后，他桌上的那封信为下一段故事留下一点牵挂。",
+      "chapter": "当前旅程 · 音乐与下一章线索",
+      "source": "Lux3D · hector · cn:4331021",
+      "status": "live",
+      "image": "assets/characters/hector.webp"
+    },
+    {
+      "id": "imelda",
+      "name": "阿玛 Ama",
+      "role": "守灯人 · 花桥入口的守候者",
+      "quote": "不用替她走完，只要让她知道有人同行。",
+      "description": "守着桥灯，说明旧物与点灯的关系。她给玩家方向，也允许每个人按自己的速度告别。",
+      "chapter": "当前旅程 · 桥灯与指引",
+      "source": "Lux3D · imelda · cn:4331251；运行使用其动画衍生版",
+      "status": "live",
+      "image": "assets/characters/imelda.webp"
+    },
+    {
+      "id": "dante",
+      "name": "但丁 Dante",
+      "role": "引路犬 · 会回头等你的伙伴",
+      "quote": "先走几步，再回头看看你。",
+      "description": "在广场引路，在花桥上同行；玩家停下时也会等待。图中为压缩包的静态原型，游戏使用四足行走版本。",
+      "chapter": "当前旅程 · 陪伴与过桥",
+      "source": "Lux3D · dante · cn:4333618；运行版本由 Tripo 整合动作",
+      "status": "live",
+      "image": "assets/characters/dante.webp"
+    },
+    {
+      "id": "miguel",
+      "name": "抱吉他的少年",
+      "role": "拟定身份 · 寻曲的少年",
+      "quote": "还有一段旋律，想弹给某个人听。",
+      "description": "拟在「未寄出的信」支线登场。与马特奥一起寻找遗失的曲调，让听音、节奏与拨弦手势组成一场小小的合奏。",
+      "chapter": "未寄出的信 · 音乐支线",
+      "source": "Lux3D · miguel · cn:4331015",
+      "status": "future",
+      "image": "assets/characters/miguel.webp"
+    },
+    {
+      "id": "ernesto",
+      "name": "白衣歌者",
+      "role": "拟定身份 · 灯市舞台的歌者",
+      "quote": "被许多人记住，和被一个人懂得，哪一种更珍贵？",
+      "description": "计划在灯市舞台章节登场。通过歌声、信件与不同人的回忆，探索名声之外，真正值得留下的关系。",
+      "chapter": "灯市回声 · 人物支线",
+      "source": "Lux3D · ernesto · cn:4331246",
+      "status": "future",
+      "image": "assets/characters/ernesto.webp"
+    },
+    {
+      "id": "elena_skeleton",
+      "name": "戴眼镜的档案员",
+      "role": "拟定身份 · 记忆档案馆的整理者",
+      "quote": "把名字找回来，也把名字后面的故事找回来。",
+      "description": "拟在记忆档案馆登场。引导玩家整理旧照片与手写便笺，以观察和配对拼出一段家庭往事。",
+      "chapter": "记忆档案馆 · 照片与信件",
+      "source": "Lux3D · elena_skeleton · cn:4331616",
+      "status": "future",
+      "image": "assets/characters/elena_skeleton.webp"
+    },
+    {
+      "id": "victoria",
+      "name": "灯市绣娘",
+      "role": "拟定身份 · 旧衣工坊的手艺人",
+      "quote": "一针一线，也能把一段路留住。",
+      "description": "计划在家族工坊章节登场。用布纹、线色与修补痕迹连接旧鞋的故事，延伸描线与缝补互动。",
+      "chapter": "家族工坊 · 手作支线",
+      "source": "Lux3D · victoria · cn:4331717",
+      "status": "future",
+      "image": "assets/characters/victoria.webp"
+    },
+    {
+      "id": "papa_julio",
+      "name": "卷胡须的修表匠",
+      "role": "拟定身份 · 钟楼里的修表师",
+      "quote": "有些等待，不必用钟表来计算。",
+      "description": "拟在钟楼支线登场。循着钟声寻找被搁置的约定，尝试通过转动齿轮与倾听节拍修复一只旧表。",
+      "chapter": "钟楼来信 · 时间与约定",
+      "source": "Lux3D · papa_julio · cn:4331729",
+      "status": "future",
+      "image": "assets/characters/papa_julio.webp"
+    },
+    {
+      "id": "papa_felipe",
+      "name": "费利佩",
+      "role": "拟定身份 · 双子工匠之一",
+      "quote": "一个人记得尺寸，另一个人记得来处。",
+      "description": "计划与奥斯卡共同出现在家族工坊。两人保留着同一件旧物的不同线索，让玩家在交谈与组装中拼合答案。",
+      "chapter": "家族工坊 · 双人协作谜题",
+      "source": "Lux3D · papa_felipe · cn:4331835",
+      "status": "future",
+      "image": "assets/characters/papa_felipe.webp"
+    },
+    {
+      "id": "papa_oscar",
+      "name": "奥斯卡",
+      "role": "拟定身份 · 双子工匠之一",
+      "quote": "把零件拼在一起，也把没说完的话接起来。",
+      "description": "拟与费利佩形成互补互动。通过观察工具、交换零件与组合制作，让两份回忆一起完成一件修复作品。",
+      "chapter": "家族工坊 · 双人协作谜题",
+      "source": "Lux3D · papa_oscar · cn:4331861",
+      "status": "future",
+      "image": "assets/characters/papa_oscar.webp"
+    },
+    {
+      "id": "chicharron",
+      "name": "长椅上的老旅人",
+      "role": "拟定身份 · 灯市边缘的讲述者",
+      "quote": "如果你愿意坐一会儿，我就再讲一段。",
+      "description": "计划在灯市长椅支线登场。用倾听、停留与分享点心展开一段安静的相处，让陪伴本身成为玩家的选择。",
+      "chapter": "灯市长椅 · 倾听与陪伴",
+      "source": "Lux3D · chicharron · cn:4333408",
+      "status": "future",
+      "image": "assets/characters/chicharron.webp"
+    },
+    {
+      "id": "tall_skeleton",
+      "name": "渡口引路人",
+      "role": "拟定身份 · 连接新街区的向导",
+      "quote": "下一盏灯，或许就在你还没走过的街角。",
+      "description": "拟在后续街区开放时登场。通过灯色、路标与不同人的委托引出新路线，让花桥之外的城市逐步展开。",
+      "chapter": "灯市归途 · 新街区探索",
+      "source": "Lux3D · tall_skeleton · cn:4333412",
+      "status": "future",
+      "image": "assets/characters/tall_skeleton.webp"
+    }
+  ],
+  "amaMappingEvidence": "imelda.glb 与 animation.glb 的网格顶点数（156387）、位置包围盒和两张内嵌材质图 SHA-256 一致；运行 NPC 源文件为 animation.glb。"
+}
