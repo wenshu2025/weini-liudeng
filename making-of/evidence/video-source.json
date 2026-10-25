@@ -1,0 +1,11 @@
+{
+  "sourceFile": "为你留灯-90秒版-v6-音乐衔接优化.mp4",
+  "sourceBytes": 171567168,
+  "sourceSha256": "3d620b9d7619a6ad7db9501c239ce3049e5689f671de671f0b42643bd1bd254a",
+  "webFile": "assets/story-film-v6.mp4",
+  "webBytes": 16408543,
+  "webSha256": "ece66501e0789bec0fb674c5f56dc4633542815e4b448f74ec898c5f2e8bea43",
+  "durationSeconds": 90,
+  "webEncoding": "1280px H.264 24fps, AAC 160kbps, faststart",
+  "note": "网页播放副本；音乐与画面来自用户指定v6文件，不重新编排音轨。"
+}

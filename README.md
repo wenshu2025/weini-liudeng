@@ -65,8 +65,10 @@ npm run deploy
 
 ## 开发纪实与人物图鉴
 
-[打开制作纪实网页](https://weini-liudeng.wenshu2025.workers.dev/making-of/)：记录 12 轮迭代、Lux3D 旧物与 NPC 任务、参考与过程图、关键版本对比、实际 GLB 查看器、90 秒叙事短片，以及 16 位人物角色图鉴（7 位已登场、9 位未来章节储备）。概念图、实机截图与预渲染镜头分别标注。
+[打开制作纪实网页](https://weini-liudeng-making-of.netlify.app/)：记录 12 轮迭代、Lux3D 旧物与 NPC 任务、参考与过程图、关键版本对比、实际 GLB 查看器、90 秒 v6 音乐衔接优化版短片，以及 16 位人物角色图鉴（7 位已登场、9 位未来章节储备）。概念图、实机截图与预渲染镜头分别标注。
 
 网页源文件位于 `making-of/`。图片与视频使用公开站点留存的媒体文件，原图索引见 `making-of/evidence/media-ledger.json`；本地运行时需恢复这些媒体，或直接访问线上网页。
 
 制作纪实本地预览：先运行 `python3 scripts/fetch_making_of.py`，再 `npm run build`，用 `python3 -m http.server 8775 --directory deploy/cloudflare/dist` 访问 `/making-of/`。
+
+制作纪实现部署于 Netlify。恢复素材后运行 `python3 scripts/build_netlify_making_of.py`，发布目录为 `deploy/netlify/dist`。网页使用 v6 音乐衔接优化版的播放副本；游戏试玩仍连接 Cloudflare。
